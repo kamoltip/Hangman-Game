@@ -1,0 +1,74 @@
+body{
+	background-image: url("../images/hangman.jpg");
+	background-size: 110% auto;
+	background-repeat: none;
+}
+
+h1 {
+font-family: sans-serif;
+color:brown;
+text-align: center;
+font-size: 500%;
+}
+
+h2{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color:orange;
+	font-size: 350%;
+}
+
+.welcome{
+	background-image: url("../images/hangman.jpg");
+	background-size: 110% auto;
+	background-repeat: none;
+}
+
+
+a{
+	font-size: 250%;
+	font-family: sans-serif;
+	font-weight: 50px;
+	color: yellow;
+
+}
+
+#container{
+	width:85%;
+	height: auto;
+	border-radius: 5px;
+	padding:20px;
+	margin:10% auto;
+	background-color: antiquewhite;
+	opacity: 0.8;
+
+}
+
+#letters a{
+	color: orange;
+	background-color: brown;
+	border-radius: 5px;
+	padding: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	margin: 2px;
+
+}
+
+#letters a:hover {
+	color: red;
+	padding: 20px;
+}
+
+#letters{
+	text-align: center; 
+}
+
+#header p {
+	font-size: 15px;
+}
+
+#letters .deactive {
+	color: brown;
+}
