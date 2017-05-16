@@ -72,3 +72,14 @@ a{
 #letters .deactive {
 	color: brown;
 }
+
+#word {
+	font-size: 30px;
+	padding: 10px;
+	text-align: center;
+}
+
+p {
+	font-size: 30px;
+	color: purple;
+}

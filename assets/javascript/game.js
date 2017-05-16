@@ -12,21 +12,15 @@ if (gretting === true){
 	};
 
 words = {};
-words.wordArray = [];
-words.wordUArray = [];
 
-words.lives = 8;
-words.NumInWordBank = words.length;
-words.wordU = "";
-var wordGress;
 
+var word = document.getElementById("word");
+console.log(word);
 //function start here//
-
-
 
 var words = ["mayda","atlantis","cantref","gwaelod","lyonesse","mu","kumari-kandam","mauritia","hy-brasil","thule","iram","shambhala"];
 var pickWord = function(){
-randomWord = words[Math.floor(Math.random() * 12 )];
+var randomWord = words[Math.floor(Math.random() * 12 )];
 return randomWord;
 
 };
@@ -38,50 +32,63 @@ console.log(pickWord());
 var random = pickWord();
 random.split("")
 
-console.log (random.split(""));
+console.log (random);
 
 //put the bar on////////////////////////
-var bar = function() {
-    var str = document.getElementById("word").innerHTML; 
-    var res = str.replace( "random", random.length);
-    document.getElementById("word").innerHTML = res;
-}
+	
+	var replace = random.replace(/[a-z]/g, '__ ');
+	
+	console.log(word)
+	console.log(replace);
+	word.innerText = replace;
 
-bar();
+	
 
-var result = function () {
-	bar = document.getElementById("word");
-	correct = document.creatElementById("ul");
-
-	for (var i = 0; i < random.length; i++ ) {
-		correct.setAttribute ("id", "")
-	}
-}
 
 
 //score wise//
-var lives = document.getElementById("lives")
-var counter = 8;
-wordGuess;
+// var lives = document.getElementById("lives");
+// var counter = 8;
 
-if( randomWord !== wordGuess){
-	counter--;
-	lives.innerText = counter;
-} else{
-	remaining--;
-	lives.innerText = counter;
-} 
+// lives.innerText = counter;
 
-if(randomWord === wordGuess){
-	counter++;
-}
+// if (counter === 0){
+// 	lives.innerText = "YOU LOSE!!";
+// }
 
-lives.innerText = counter;
+// if (){
 
-if (counter === 0){
-	alert("GAME OVER!!!");
-	//and stop the game.
-}
+// };
+
+// var counter = 0;
+// startBtn.addEventListener("click", function () {
+//     counter++; 
+//     add.innerText = counter;
+//     if(counter > 5){
+//         wins.innerText = "User wins!!!!";
+//     }
+// });
+
+
+
+// if( randomWord !== wordGuess){
+// 	counter--;
+// 	lives.innerText = counter;
+// } else{
+// 	remaining--;
+// 	lives.innerText = counter;
+// } 
+
+// if(randomWord === wordGuess){
+// 	counter++;
+// }
+
+// lives.innerText = counter;
+
+// if (counter === 0){
+// 	alert("GAME OVER!!!");
+// 	and stop the game.
+// }
 
 //THEN FIGURE OUT HOW TO MAKE IT WIN!//
 
