@@ -34,16 +34,30 @@ return randomWord;
 pickWord();
 console.log(pickWord());
 
-//spliting the words//
-var myString = 'mayda, atlantis, contref, gwaelod, lyonesse, mu, kumari-kandam, mauritia, hy-brasil, thule, iram, shambhala';
-var splits = myString.split(' ', 12);
+//split the randomword//////////////////
+var random = pickWord();
+random.split("")
 
-console.log(splits);
+console.log (random.split(""));
 
-var myString = 'mayda atlantis contref';
-var splits = myString.split('', myString.length);
+//put the bar on////////////////////////
+var bar = function() {
+    var str = document.getElementById("word").innerHTML; 
+    var res = str.replace( "random", random.length);
+    document.getElementById("word").innerHTML = res;
+}
 
-console.log (splits);
+bar();
+
+var result = function () {
+	bar = document.getElementById("word");
+	correct = document.creatElementById("ul");
+
+	for (var i = 0; i < random.length; i++ ) {
+		correct.setAttribute ("id", "")
+	}
+}
+
 
 //score wise//
 var lives = document.getElementById("lives")
@@ -69,38 +83,9 @@ if (counter === 0){
 	//and stop the game.
 }
 
-// THEN FIGURE OUT HOW TO MAKE IT WIN!//
+//THEN FIGURE OUT HOW TO MAKE IT WIN!//
 
 
-words.SetUnderline = function() {
-	words.pullWord();
-	for (i=0; i < words.length; i++){
-		words.wordArray[i] = words.charAt(i);
-		words.wordUArray[i] = "_";
-	}
-	words.wordU = words.wordUArray.join("");
-	document.getElementById("word").innerHTML = words.length;
-}
-
-
-
-
-
-
-//show lives//
-// var guess = 
-// comment.function () {
-// 	lives.innerHTML = "You have" + Lives + "left";
-// 	if (lives < 1) {
-// 		lives.innerHTML = "GAME OVER!!";
-// 	}
-// 	for (var i = 0; i < )
-// }
-//CharAt for split each alpha//
-
-
-
-//show the bar according to the random word//
 
 
 
