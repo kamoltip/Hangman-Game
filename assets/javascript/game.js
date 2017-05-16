@@ -1,15 +1,15 @@
-// window.onload = function() {
-//       setTimeout(function() {
+window.onload = function() {
+      setTimeout(function() {
       	
-// var gretting = confirm("Are you ready ?");
-// if (gretting === true){
-// 	confirm("Welcome to The Hangman World");
-// 	confirm("It's time to remind of The extinc land on Earth.");
-// 	confirm("Let's see how much do you know about them..");
-// } else {
-// 	confirm("See You Next Time!");
-// 	}} , 1100);
-// 	};
+var gretting = confirm("Are you ready ?");
+if (gretting === true){
+	confirm("Welcome to The Hangman World");
+	confirm("It's time to remind of The extinc land on Earth.");
+	confirm("Let's see how much do you know about them..");
+} else {
+	confirm("See You Next Time!");
+	}} , 1100);
+	};
 
 words = {};
 words.wordArray = [];
