@@ -30,9 +30,10 @@ console.log(pickWord());
 
 //split the randomword//////////////////
 var random = pickWord();
-random.split("")
+random.split("");
 
 console.log (random);
+
 
 //put the bar on////////////////////////
 	
@@ -42,8 +43,35 @@ console.log (random);
 	console.log(replace);
 	word.innerText = replace;
 
-	
+	// onclick////////////////////////////
+	//comoare the letter
 
+	function letter (l){
+		console.log(l);
+		for (var i = 0; i < random.length; i++) {
+			if (l === random[i]) {
+				// match!!
+
+				
+			}
+		}
+
+	} 
+
+
+
+	var life = document.getElementById("lives");
+	var random;
+	var play = [random];
+	document.onkeyup = function(event) {
+		var player = event.key;
+		if((player === random)) {
+			counter++;
+			lives.innerText = counter;
+			
+		}
+		
+	}
 
 
 //score wise//
